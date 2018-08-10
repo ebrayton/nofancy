@@ -36,7 +36,7 @@ Use [GitHub flavoured markdown](https://help.github.com/articles/github-flavored
 
 ### Config
 
-Note that only posts in content/post will be displayed and the author setting in `config.toml` is slightly different:
+Note that only posts in content/posts will be displayed and the author setting in `config.toml` is slightly different:
 
 ```toml
 baseurl = "http://hugo.spf13.com/"
@@ -48,12 +48,12 @@ copyright = "Copyright (c) 2008 - 2014, Steve Francia; all rights reserved."
 	# See themes/nofancy/static/highlight/styles for available options
 	# i.e. "default", "github", "monokai".
 	highlight="Assign a syntax highlight style"
-	
+
 	# Controls what items are listed in the top nav menu
 	# "none", or "categories"
 	# If you have too many categories to fit in the top nav menu, set this to "none"
 	topmenu="categories"
-	
+
 [author]
     name = "Steve Francia"
     github = "spf13"
@@ -65,6 +65,6 @@ copyright = "Copyright (c) 2008 - 2014, Steve Francia; all rights reserved."
 
 All your personal information is in `author` section. it also support SNS links including github, twitter, linkedin, facebook (just fill in your user id).
 
-There is a fixed About page link on the top navbar which will bring user to your aboutme page. Just use `hugo new about` to write something about yourself!
+There is a fixed About page link on the top navbar which will bring user to your aboutme page. Just use `hugo new about.md` to write something about yourself!
 
 __You are ready to go!__

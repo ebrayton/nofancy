@@ -10,11 +10,11 @@
 
 	  <ul class="posts">
 		{{ $baseurl := .Site.BaseURL }}
-		{{ range $name, $page := .Site.Pages }}
-		{{ if eq .Type "post" }}
+		{{ range $name, $page := .Site.RegularPages }}
+		{{ if eq .Type "posts" }}
 		<li>
 		  {{ if .Draft }}
-		  DRAFT: 
+		  DRAFT:
 		  {{ end }}
 		  <a href="{{ .Permalink }}">{{ $page.Title }}</a>
 
